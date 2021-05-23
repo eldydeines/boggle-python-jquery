@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Boggle{% endblock %}
+
+{% block content %}
+<div>
+    <table>
+        <tbody>
+            {% for y in range(5) %}
+            <tr>
+                {% for i in range(5)%}
+                <td>{{session['game_board'][y][i]}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div>
+    <form method="POST" id="target">
+        <input type="text" name="guess" id="guess" autofocus>
+    </form>
+</div>
+<div>
+    <h2 id="guess-status">Guess Valid/Invaid: <span id="status"></span></h2>
+</div>
+<div>
+    <h2>Score = <span id="current-score"></span></h2>
+    <h2 id="score-status"></h2>
+    <h2>Timer = <span id="timer"></span></h2>
+    <br>
+    <ul id="guess-list">
+
+    </ul>
+</div>
+
+
+{% endblock %}
