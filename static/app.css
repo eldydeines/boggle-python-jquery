@@ -1,6 +1,36 @@
-td {
+body {
+    margin: auto;
+    text-align: center; 
+    font-family: 'Fjalla One', sans-serif;
     font-size: 20px;
+}
+
+
+
+.timer-style {
+    display: inline;
+    margin: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    
     border: 1px solid red;
     padding: 10px;
     text-align: center;
+    font-size: 30px;
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li {
+    list-style-type: none;
+    display: block;
 }

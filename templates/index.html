@@ -4,6 +4,12 @@
 
 {% block content %}
 <div>
+    <div>
+        <h2 class="timer-style">Score = <span id="current-score"></span></h2>
+        <h2 class="timer-style" id="timer-status">Timer = <span id="timer"></span></h2>
+        <h2 id="score-status"></h2>
+
+    </div>
     <table>
         <tbody>
             {% for y in range(5) %}
@@ -21,16 +27,10 @@
         <input type="text" name="guess" id="guess" autofocus>
     </form>
 </div>
-<div>
-    <h2 id="guess-status">Guess Valid/Invaid: <span id="status"></span></h2>
-</div>
-<div>
-    <h2>Score = <span id="current-score"></span></h2>
-    <h2 id="score-status"></h2>
-    <h2>Timer = <span id="timer"></span></h2>
-    <br>
-    <ul id="guess-list">
 
+<div>
+    <h2 id="guess-status"><span id="status"></span></h2>
+    <ul id="guess-list">
     </ul>
 </div>
 
